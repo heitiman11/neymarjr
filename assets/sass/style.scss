@@ -1,0 +1,106 @@
+// VARIAVEIS
+
+$button-color: #fff;
+$bg-dark: #212529;
+$blue-800: #052c65;
+$blue-900: #031633;
+
+// MIXIN BUTTON STYLE
+
+@mixin buttonStyle($cursor, $padding, $decoration) {
+  cursor: $cursor;
+  padding: $padding;
+  text-decoration: $decoration;
+}
+
+// HEADER STYLE
+
+header {
+  .logo img {
+    height: 70px;
+  }
+  .menu a {
+    @include buttonStyle(pointer, 10px 20px, none);
+    margin-right: 5px;
+    color: $button-color;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $blue-800;
+    }
+  }
+  .menu-mobile .toggle {
+    background-color: $blue-800;
+    border-radius: 5px;
+  }
+  .menu-mobile .toggle div {
+    height: 3px;
+    width: 25px;
+    margin: 3px;
+    border-radius: 5px;
+    background-color: $blue-900;
+  }
+
+  .menu-mobile .offcanvas-body li {
+    margin: 10px;
+    padding: 5px;
+    background-color: $bg-dark;
+    border-radius: 5px;
+  }
+
+  .menu-mobile .offcanvas-body li a {
+    @include buttonStyle(pointer, 10px 20px, none);
+    color: $button-color;
+  }
+}
+
+// MAIN STYLE
+
+main {
+  .textsHome p {
+    max-width: 40ch;
+  }
+}
+
+// SECTION "SOBRE" STYLE
+
+#sobre {
+  img {
+    max-height: 200px;
+  }
+  .textSobre p {
+    max-width: 80ch;
+  }
+}
+
+// SECTION CLUBES
+
+#clubes {
+  .h-500 {
+    height: 500px;
+  }
+
+  .imgMobile {
+    height: 250px;
+  }
+}
+
+#contato {
+  .text-contato {
+    color: #aaa;
+  }
+}
+
+#footer {
+  .menu-footer li {
+    margin-bottom: 10px;
+  }
+
+  .menu-footer li a {
+    color: #ccc;
+  }
+
+  .copy {
+    font-size: 0.85rem;
+  }
+}

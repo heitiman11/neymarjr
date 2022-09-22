@@ -1,0 +1,71 @@
+header .logo img {
+  height: 70px;
+}
+header .menu a {
+  cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-right: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+header .menu a:hover {
+  background-color: #052c65;
+}
+header .menu-mobile .toggle {
+  background-color: #052c65;
+  border-radius: 5px;
+}
+header .menu-mobile .toggle div {
+  height: 3px;
+  width: 25px;
+  margin: 3px;
+  border-radius: 5px;
+  background-color: #031633;
+}
+header .menu-mobile .offcanvas-body li {
+  margin: 10px;
+  padding: 5px;
+  background-color: #212529;
+  border-radius: 5px;
+}
+header .menu-mobile .offcanvas-body li a {
+  cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+main .textsHome p {
+  max-width: 40ch;
+}
+
+#sobre img {
+  max-height: 200px;
+}
+#sobre .textSobre p {
+  max-width: 80ch;
+}
+
+#clubes .h-500 {
+  height: 500px;
+}
+#clubes .imgMobile {
+  height: 250px;
+}
+
+#contato .text-contato {
+  color: #aaa;
+}
+
+#footer .menu-footer li {
+  margin-bottom: 10px;
+}
+#footer .menu-footer li a {
+  color: #ccc;
+}
+#footer .copy {
+  font-size: 0.85rem;
+}
+
+/*# sourceMappingURL=style.css.map */
